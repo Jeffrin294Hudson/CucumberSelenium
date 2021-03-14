@@ -67,7 +67,7 @@ public class CarSearchSteps
 
 	@Then("^I select make as \"([^\"]*)\"$")
 	public void i_select_make_as(String make) throws Throwable {
-		Select car = new Select(driver.findElement(By.xpath("//*[@id='makesd']")));
+		Select car = new Select(driver.findElement(By.xpath("//*[@id='makes']")));
 		car.selectByVisibleText(make);
 	}
 
